@@ -15,8 +15,5 @@ IMPORTANT TODOs:
     - The user will play by entering the space they want their piece to be placed.
 - Set whether Player 1 or Player 2 will be X or O and record their move on the board for each turn.
     - i.e. Print out the state of the board after each move.
-- Make sure to consider some basic validations in your code like:
-    - Player enters a spot that has been taken.
-    - Invalid user input (non-digit or number out of bounds).
 - The program will end when the board is filled up (no winner) or when there is a clear winner.
     - Output an end-of-game status message.
