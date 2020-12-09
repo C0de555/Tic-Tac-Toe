@@ -61,13 +61,10 @@ while True:
     print("Player 1, it's your turn")
     # get valid input
     player1_move = int(input("Where would you like to move (1-9): "))
-    if player1_move > 9 or player1_move < 1:
-        print("Invalid input, please enter a number from 1 to 9")
-        player1_move = int(input("Where would you like to move (1-9): "))
 
     # update board
     board.update_board(player1_move, 'X')
-    board.print()
+    
     # check to see if player 1 won
     if board.winner("X") is True:
         print("Player 1 is the winner!")
@@ -79,15 +76,12 @@ while True:
 
     # player 2 plays
     print("Player 2, it's your turn")
-    # get valid input
+    # get input
     player2_move = int(input("Where would you like to move (1-9): "))
-    if player2_move > 9 or player2_move < 1:
-        print("Invalid input, please enter a number from 1 to 9")
-        player2_move = int(input("Where would you like to move (1-9): "))
-
+   
     # update board
     board.update_board(player2_move, 'O')
-    board.print()
+    
     # check to see if player 2 won
     if board.winner("O") is True:
         print("Player 2 is the winner!")
